@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 111 151" style="enable-background:new 0 0 111 151;" xml:space="preserve">
+<style type="text/css">
+	.st0{filter:url(#Adobe_OpacityMaskFilter);}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+	.st2{mask:url(#mask-3_1_);}
+	.st3{fill:#545B60;}
+	.st4{fill:#282D30;}
+	.st5{fill:#6C757D;}
+	.st6{fill:#FFFFFF;fill-opacity:0.2;}
+	.st7{opacity:0.2;fill:#A52714;enable-background:new    ;}
+</style>
+<title>logo_lockup_firebase_vertical</title>
+<desc>Created with Sketch.</desc>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="0.71" y="0.48" width="109.59" height="150.04">
+		<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="0.71" y="0.48" width="109.59" height="150.04" id="mask-3_1_">
+	<g class="st0">
+		<path id="path-2_1_" class="st1" d="M96.09,33.99c-0.21-1.26-1.11-2.3-2.34-2.7c-1.22-0.39-2.57-0.08-3.48,0.82L72.57,49.93
+			L58.54,23.42c-0.56-1.14-1.72-1.85-2.99-1.85s-2.43,0.72-2.99,1.85l-7.61,14.49L25.69,2.28c-1.54-2.9-5.9-2.13-6.42,1.11
+			L0.79,121.54l49.53,27.7c3.12,1.71,6.89,1.71,10.01,0l49.96-27.7L96.09,33.99z"/>
+	</g>
+</mask>
+<g id="_Group_2" class="st2">
+	<g transform="translate(-6.346125, -0.160154)">
+		<g id="_Group_3">
+			<path id="_Path_" class="st3" d="M7.14,121.7L25.7,3.55c0.51-3.24,4.88-4.01,6.42-1.11l19.16,35.63l7.61-14.49
+				c0.59-1.13,1.76-1.84,3.04-1.84c1.28,0,2.45,0.71,3.04,1.84l51.67,98.12H7.14z"/>
+			<g id="_Group_4" transform="translate(0.000000, 30.119310)">
+				<polygon id="Shape" class="st4" points="71.13,45.55 51.2,7.95 7.14,91.58 				"/>
+			</g>
+		</g>
+		<g id="_Group_5" transform="translate(3.421930, 23.299844)">
+			<g id="_Group_6" transform="translate(3.421930, 7.387755)">
+				<path id="_Path_2" class="st5" d="M109.8,91.01L95.59,3.46c-0.21-1.26-1.11-2.3-2.34-2.7s-2.57-0.08-3.48,0.82L0.29,91.01
+					l49.53,27.7c3.12,1.7,6.89,1.7,10.01,0L109.8,91.01z"/>
+			</g>
+		</g>
+		<path id="_Compound_Path_" class="st6" d="M102.44,34.15c-0.21-1.26-1.11-2.3-2.34-2.7c-1.22-0.39-2.57-0.08-3.48,0.82
+			L78.91,50.09L64.88,23.58c-0.56-1.14-1.72-1.85-2.99-1.85c-1.27,0-2.43,0.72-2.99,1.85l-7.61,14.49L32.03,2.44
+			c-1.54-2.9-5.9-2.13-6.42,1.11L7.14,121.7H7.05l0.09,0.09l0.51,0.26l71.18-71.09l17.79-17.73c0.92-0.9,2.26-1.22,3.48-0.82
+			c1.22,0.39,2.12,1.43,2.34,2.7l14.03,86.69l0.17-0.09L102.44,34.15z M7.31,121.53L25.7,4.4c0.51-3.24,4.88-4.01,6.42-1.11
+			l19.16,35.63l7.61-14.49c0.59-1.13,1.76-1.84,3.04-1.84c1.28,0,2.45,0.71,3.04,1.84l13.69,25.91L7.31,121.53z"/>
+		<path id="_Path_3" class="st7" d="M66.68,148.55c-3.12,1.71-6.89,1.71-10.01,0L7.22,120.93l-0.09,0.77l49.53,27.7
+			c3.12,1.71,6.89,1.71,10.01,0l49.96-27.7l-0.09-0.77L66.68,148.55z"/>
+	</g>
+</g>
+</svg>

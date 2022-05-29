@@ -1,4 +1,22 @@
 /* Variables and mixins declared here will be available in all other SCSS files */
+
+
+$primary: #f5df4d;
+// :root {
+// 	--bs-primary: #f5df4d;
+// }
+
 @import 'bootstrap/scss/functions'; /* Override Bootstrap's variables here */
 @import 'bootstrap/scss/variables';
 @import 'bootstrap/scss/mixins';
+
+$theme-colors: (
+	'primary': #f5df4e,
+	'secondary': #bb2a30,
+	'success': $success,
+	'info': $info,
+	'warning': #ffc107,
+	'danger': #bb2a30,
+	'light': $light,
+	'dark': $dark
+);

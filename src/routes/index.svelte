@@ -1,2 +1,262 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+	import { onMount } from 'svelte';
+import About from '../components/About.svelte';
+	import Nav from '../components/Nav.svelte';
+
+	onMount(() => {
+		window.addEventListener('DOMContentLoaded', (event) => {
+			// Activate Bootstrap scrollspy on the main nav element
+			const sideNav = document.body.querySelector('#sideNav');
+			if (sideNav) {
+				new bootstrap.ScrollSpy(document.body, {
+					target: '#sideNav',
+					offset: 74
+				});
+			}
+
+			// Collapse responsive navbar when toggler is visible
+			const navbarToggler = document.body.querySelector('.navbar-toggler');
+			const responsiveNavItems = [].slice.call(
+				document.querySelectorAll('#navbarResponsive .nav-link')
+			);
+			responsiveNavItems.map(function (responsiveNavItem) {
+				responsiveNavItem.addEventListener('click', () => {
+					if (window.getComputedStyle(navbarToggler).display !== 'none') {
+						navbarToggler.click();
+					}
+				});
+			});
+		});
+	});
+</script>
+
+<Nav />
+<div class="container-fluid p-0">
+	<About/>
+	<hr class="m-0" />
+	<!-- Skills-->
+	<section class="resume-section" id="skills">
+		<div class="resume-section-content">
+			<h2 class="mb-5">Skills</h2>
+			<div class="subheading mb-3">Programming Languages & Tools</div>
+			<ul class="list-inline dev-icons skills-cont">
+				<div class="core">
+					<div class="text-secondary skill-title subheading-skills">Core</div>
+					<li class="list-inline-item"><i class="fab fa-html5" /></li>
+					<li class="list-inline-item"><i class="fab fa-css3-alt" /></li>
+					<li class="list-inline-item"><i class="fab fa-js-square" /></li>
+					<li class="list-inline-item"><i class="fab fa-sass" /></li>
+					<li class="list-inline-item">
+						<img class="skill-logo" src="./assets/img/svelte.svg" alt="svelte logo" />
+					</li>
+					<li class="list-inline-item"><i class="fab fa-react" /></li>
+				</div>
+				<div class="tools">
+					<div class="text-secondary skill-title subheading-skills">tools</div>
+
+					<li class="list-inline-item"><i class="fab fa-node-js" /></li>
+					<li class="list-inline-item"><i class="fab fa-wordpress" /></li>
+					<li class="list-inline-item">
+						<img class="skill-logo" src="./assets/img/firebase-logo.svg" alt="firebase logo" />
+					</li>
+					<li class="list-inline-item">
+						<img class="skill-logo" src="./assets/img/git-logo.svg" alt="git logo" />
+					</li>
+					<li class="list-inline-item">
+						<img class="skill-logo" src="./assets/img/pwa-logo.svg" alt="pwa logo" />
+					</li>
+					<li class="list-inline-item"><i class="fab fa-npm" /></li>
+				</div>
+				<div class="design">
+					<div class="text-secondary skill-title subheading-skills">design</div>
+					<li class="list-inline-item">
+						<img class="skill-logo" src="./assets/img/figma-logo.svg" alt="figma logo" />
+					</li>
+					<li class="list-inline-item">
+						<img class="skill-logo" src="./assets/img/xd-logo.svg" alt="xd logo" />
+					</li>
+					<li class="list-inline-item">
+						<img class="skill-logo" src="./assets/img/uxui-logo.svg" alt="ui-ux logo" />
+					</li>
+				</div>
+			</ul>
+			<div class="subheading mb-3">Workflow</div>
+			<ul class="fa-ul mb-0">
+				<li>
+					<span class="fa-li"><i class="fas fa-check" /></span>
+					Mobile-First, Responsive Design
+				</li>
+				<li>
+					<span class="fa-li"><i class="fas fa-check" /></span>
+					Cross Browser Testing & Debugging
+				</li>
+				<li>
+					<span class="fa-li"><i class="fas fa-check" /></span>
+					Cross Functional Teams
+				</li>
+				<li>
+					<span class="fa-li"><i class="fas fa-check" /></span>
+					Agile Development & Scrum
+				</li>
+			</ul>
+		</div>
+	</section>
+	<hr class="m-0" />
+	<!-- Experience-->
+	<section class="resume-section" id="experience">
+		<div class="resume-section-content">
+			<h2 class="mb-5">Experience</h2>
+			<div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+				<div class="flex-grow-1">
+					<h3 class="mb-0">Senior Web Developer</h3>
+					<div class="subheading mb-3">Intelitec Solutions</div>
+					<p>
+						Bring to the table win-win survival strategies to ensure proactive domination. At the
+						end of the day, going forward, a new normal that has evolved from generation X is on the
+						runway heading towards a streamlined cloud solution. User generated content in real-time
+						will have multiple touchpoints for offshoring.
+					</p>
+				</div>
+				<div class="flex-shrink-0">
+					<span class="text-primary">March 2013 - Present</span>
+				</div>
+			</div>
+			<div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+				<div class="flex-grow-1">
+					<h3 class="mb-0">Web Developer</h3>
+					<div class="subheading mb-3">Intelitec Solutions</div>
+					<p>
+						Capitalize on low hanging fruit to identify a ballpark value added activity to beta
+						test. Override the digital divide with additional clickthroughs from DevOps.
+						Nanotechnology immersion along the information highway will close the loop on focusing
+						solely on the bottom line.
+					</p>
+				</div>
+				<div class="flex-shrink-0">
+					<span class="text-primary">December 2011 - March 2013</span>
+				</div>
+			</div>
+			<div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+				<div class="flex-grow-1">
+					<h3 class="mb-0">Junior Web Designer</h3>
+					<div class="subheading mb-3">Shout! Media Productions</div>
+					<p>
+						Podcasting operational change management inside of workflows to establish a framework.
+						Taking seamless key performance indicators offline to maximise the long tail. Keeping
+						your eye on the ball while performing a deep dive on the start-up mentality to derive
+						convergence on cross-platform integration.
+					</p>
+				</div>
+				<div class="flex-shrink-0">
+					<span class="text-primary">July 2010 - December 2011</span>
+				</div>
+			</div>
+			<div class="d-flex flex-column flex-md-row justify-content-between">
+				<div class="flex-grow-1">
+					<h3 class="mb-0">Web Design Intern</h3>
+					<div class="subheading mb-3">Shout! Media Productions</div>
+					<p>
+						Collaboratively administrate empowered markets via plug-and-play networks. Dynamically
+						procrastinate B2C users after installed base benefits. Dramatically visualize customer
+						directed convergence without revolutionary ROI.
+					</p>
+				</div>
+				<div class="flex-shrink-0">
+					<span class="text-primary">September 2008 - June 2010</span>
+				</div>
+			</div>
+		</div>
+	</section>
+	<hr class="m-0" />
+	<!-- Education-->
+	<section class="resume-section" id="education">
+		<div class="resume-section-content">
+			<h2 class="mb-5">Education</h2>
+			<div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+				<div class="flex-grow-1">
+					<h3 class="mb-0">University of Colorado Boulder</h3>
+					<div class="subheading mb-3">Bachelor of Science</div>
+					<div>Computer Science - Web Development Track</div>
+					<p>GPA: 3.23</p>
+				</div>
+				<div class="flex-shrink-0">
+					<span class="text-primary">August 2006 - May 2010</span>
+				</div>
+			</div>
+			<div class="d-flex flex-column flex-md-row justify-content-between">
+				<div class="flex-grow-1">
+					<h3 class="mb-0">James Buchanan High School</h3>
+					<div class="subheading mb-3">Technology Magnet Program</div>
+					<p>GPA: 3.56</p>
+				</div>
+				<div class="flex-shrink-0">
+					<span class="text-primary">August 2002 - May 2006</span>
+				</div>
+			</div>
+		</div>
+	</section>
+	<hr class="m-0" />
+	<!-- Interests-->
+	<section class="resume-section" id="interests">
+		<div class="resume-section-content">
+			<h2 class="mb-5">Interests</h2>
+			<p>
+				Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I
+				am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy
+				mountain biking, free climbing, and kayaking.
+			</p>
+			<p class="mb-0">
+				When forced indoors, I follow a number of sci-fi and fantasy genre movies and television
+				shows, I am an aspiring chef, and I spend a large amount of my free time exploring the
+				latest technology advancements in the front-end web development world.
+			</p>
+		</div>
+	</section>
+	<hr class="m-0" />
+	<!-- Awards-->
+	<section class="resume-section" id="awards">
+		<div class="resume-section-content">
+			<h2 class="mb-5">Awards & Certifications</h2>
+			<ul class="fa-ul mb-0">
+				<li>
+					<span class="fa-li"><i class="fas fa-trophy text-warning" /></span>
+					Google Analytics Certified Developer
+				</li>
+				<li>
+					<span class="fa-li"><i class="fas fa-trophy text-warning" /></span>
+					Mobile Web Specialist - Google Certification
+				</li>
+				<li>
+					<span class="fa-li"><i class="fas fa-trophy text-warning" /></span>
+					1
+					<sup>st</sup>
+					Place - University of Colorado Boulder - Emerging Tech Competition 2009
+				</li>
+				<li>
+					<span class="fa-li"><i class="fas fa-trophy text-warning" /></span>
+					1
+					<sup>st</sup>
+					Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)
+				</li>
+				<li>
+					<span class="fa-li"><i class="fas fa-trophy text-warning" /></span>
+					2
+					<sup>nd</sup>
+					Place - University of Colorado Boulder - Emerging Tech Competition 2008
+				</li>
+				<li>
+					<span class="fa-li"><i class="fas fa-trophy text-warning" /></span>
+					1
+					<sup>st</sup>
+					Place - James Buchanan High School - Hackathon 2006
+				</li>
+				<li>
+					<span class="fa-li"><i class="fas fa-trophy text-warning" /></span>
+					3
+					<sup>rd</sup>
+					Place - James Buchanan High School - Hackathon 2005
+				</li>
+			</ul>
+		</div>
+	</section>
+</div>
