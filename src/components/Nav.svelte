@@ -1,11 +1,43 @@
-<nav class="navbar navbar-expand-lg navbar-dark gray fixed-top" id="sideNav">
+<script>
+	// import bootstrap from 'bootstrap';
+	import { onMount } from 'svelte';
+
+	let sideNav;
+    
+
+	onMount( () => {    
+		// Activate Bootstrap scrollspy on the main nav element
+		if (sideNav) {
+			console.log(sideNav);
+			new bootstrap.ScrollSpy(document.body, {
+				target: '#sideNav',
+				offset: 74
+			});
+		}
+
+		// Collapse responsive navbar when toggler is visible
+		const navbarToggler = document.body.querySelector('.navbar-toggler');
+		const responsiveNavItems = [].slice.call(
+			document.querySelectorAll('#navbarResponsive .nav-link')
+		);
+		responsiveNavItems.map(function (responsiveNavItem) {
+			responsiveNavItem.addEventListener('click', () => {
+				if (window.getComputedStyle(navbarToggler).display !== 'none') {
+					navbarToggler.click();
+				}
+			});
+		});
+	});
+</script>
+
+<nav bind:this={sideNav} class="navbar navbar-expand-lg navbar-dark gray fixed-top" id="sideNav">
 	<a class="navbar-brand js-scroll-trigger" href="#page-top">
 		<span class="d-block d-lg-none">Daniel Ramírez</span>
 		<span class="d-none d-lg-block"
 			><img
 				class="img-fluid img-profile rounded-circle mx-auto mb-2"
-                src="../../img/profile.jpg"
-				alt="profile picture"
+				src="../../img/profile.jpg"
+				alt="profile"
 			/></span
 		>
 	</a>
@@ -43,8 +75,13 @@
 		</ul>
 	</div>
 </nav>
+
 <style>
-    .gray{
-        background-color: gray;
-    }
+	.gray {
+		background-color: gray;
+	}
+	.nav-link {
+		font-family: Muli, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial,
+			sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+	}
 </style>
