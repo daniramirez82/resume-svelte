@@ -2,7 +2,7 @@
 <section class="resume-section" id="about">
 	<div class="resume-section-content">
 		<div class="resume-section-logo">
-			<img src="../../img/dr-logo.svg" alt="personal logo daniel ramirez" />
+			<img src="img/dr-logo.svg" alt="personal logo daniel ramirez" />
 		</div>
 		<h1 class="mb-0">
 			Daniel

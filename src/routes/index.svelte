@@ -1,147 +1,18 @@
 <script>
-import About from '../components/About.svelte';
-	import Nav from '../components/Nav.svelte';
+	import Skills from '../components/Skills.svelte';
 
-	
+	import About from '../components/About.svelte';
+	import Nav from '../components/Nav.svelte';
+import Projects from '../components/Projects.svelte';
 </script>
 
 <Nav />
 <div class="container-fluid p-0">
-	<About/>
+	<About />
 	<hr class="m-0" />
-	<!-- Skills-->
-	<section class="resume-section" id="skills">
-		<div class="resume-section-content">
-			<h2 class="mb-5">Skills</h2>
-			<div class="subheading mb-3">Programming Languages & Tools</div>
-			<ul class="list-inline dev-icons skills-cont">
-				<div class="core">
-					<div class="text-secondary skill-title subheading-skills">Core</div>
-					<li class="list-inline-item"><i class="fab fa-html5" /></li>
-					<li class="list-inline-item"><i class="fab fa-css3-alt" /></li>
-					<li class="list-inline-item"><i class="fab fa-js-square" /></li>
-					<li class="list-inline-item"><i class="fab fa-sass" /></li>
-					<li class="list-inline-item">
-						<img class="skill-logo" src="./assets/img/svelte.svg" alt="svelte logo" />
-					</li>
-					<li class="list-inline-item"><i class="fab fa-react" /></li>
-				</div>
-				<div class="tools">
-					<div class="text-secondary skill-title subheading-skills">tools</div>
-
-					<li class="list-inline-item"><i class="fab fa-node-js" /></li>
-					<li class="list-inline-item"><i class="fab fa-wordpress" /></li>
-					<li class="list-inline-item">
-						<img class="skill-logo" src="./assets/img/firebase-logo.svg" alt="firebase logo" />
-					</li>
-					<li class="list-inline-item">
-						<img class="skill-logo" src="./assets/img/git-logo.svg" alt="git logo" />
-					</li>
-					<li class="list-inline-item">
-						<img class="skill-logo" src="./assets/img/pwa-logo.svg" alt="pwa logo" />
-					</li>
-					<li class="list-inline-item"><i class="fab fa-npm" /></li>
-				</div>
-				<div class="design">
-					<div class="text-secondary skill-title subheading-skills">design</div>
-					<li class="list-inline-item">
-						<img class="skill-logo" src="./assets/img/figma-logo.svg" alt="figma logo" />
-					</li>
-					<li class="list-inline-item">
-						<img class="skill-logo" src="./assets/img/xd-logo.svg" alt="xd logo" />
-					</li>
-					<li class="list-inline-item">
-						<img class="skill-logo" src="./assets/img/uxui-logo.svg" alt="ui-ux logo" />
-					</li>
-				</div>
-			</ul>
-			<div class="subheading mb-3">Workflow</div>
-			<ul class="fa-ul mb-0">
-				<li>
-					<span class="fa-li"><i class="fas fa-check" /></span>
-					Mobile-First, Responsive Design
-				</li>
-				<li>
-					<span class="fa-li"><i class="fas fa-check" /></span>
-					Cross Browser Testing & Debugging
-				</li>
-				<li>
-					<span class="fa-li"><i class="fas fa-check" /></span>
-					Cross Functional Teams
-				</li>
-				<li>
-					<span class="fa-li"><i class="fas fa-check" /></span>
-					Agile Development & Scrum
-				</li>
-			</ul>
-		</div>
-	</section>
+	<Skills />
 	<hr class="m-0" />
-	<!-- Experience-->
-	<section class="resume-section" id="experience">
-		<div class="resume-section-content">
-			<h2 class="mb-5">Experience</h2>
-			<div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-				<div class="flex-grow-1">
-					<h3 class="mb-0">Senior Web Developer</h3>
-					<div class="subheading mb-3">Intelitec Solutions</div>
-					<p>
-						Bring to the table win-win survival strategies to ensure proactive domination. At the
-						end of the day, going forward, a new normal that has evolved from generation X is on the
-						runway heading towards a streamlined cloud solution. User generated content in real-time
-						will have multiple touchpoints for offshoring.
-					</p>
-				</div>
-				<div class="flex-shrink-0">
-					<span class="text-primary">March 2013 - Present</span>
-				</div>
-			</div>
-			<div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-				<div class="flex-grow-1">
-					<h3 class="mb-0">Web Developer</h3>
-					<div class="subheading mb-3">Intelitec Solutions</div>
-					<p>
-						Capitalize on low hanging fruit to identify a ballpark value added activity to beta
-						test. Override the digital divide with additional clickthroughs from DevOps.
-						Nanotechnology immersion along the information highway will close the loop on focusing
-						solely on the bottom line.
-					</p>
-				</div>
-				<div class="flex-shrink-0">
-					<span class="text-primary">December 2011 - March 2013</span>
-				</div>
-			</div>
-			<div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-				<div class="flex-grow-1">
-					<h3 class="mb-0">Junior Web Designer</h3>
-					<div class="subheading mb-3">Shout! Media Productions</div>
-					<p>
-						Podcasting operational change management inside of workflows to establish a framework.
-						Taking seamless key performance indicators offline to maximise the long tail. Keeping
-						your eye on the ball while performing a deep dive on the start-up mentality to derive
-						convergence on cross-platform integration.
-					</p>
-				</div>
-				<div class="flex-shrink-0">
-					<span class="text-primary">July 2010 - December 2011</span>
-				</div>
-			</div>
-			<div class="d-flex flex-column flex-md-row justify-content-between">
-				<div class="flex-grow-1">
-					<h3 class="mb-0">Web Design Intern</h3>
-					<div class="subheading mb-3">Shout! Media Productions</div>
-					<p>
-						Collaboratively administrate empowered markets via plug-and-play networks. Dynamically
-						procrastinate B2C users after installed base benefits. Dramatically visualize customer
-						directed convergence without revolutionary ROI.
-					</p>
-				</div>
-				<div class="flex-shrink-0">
-					<span class="text-primary">September 2008 - June 2010</span>
-				</div>
-			</div>
-		</div>
-	</section>
+	<Projects/>
 	<hr class="m-0" />
 	<!-- Education-->
 	<section class="resume-section" id="education">
@@ -235,4 +106,3 @@ import About from '../components/About.svelte';
 		</div>
 	</section>
 </div>
-

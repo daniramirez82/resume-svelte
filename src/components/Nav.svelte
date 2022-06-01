@@ -3,9 +3,9 @@
 	import { onMount } from 'svelte';
 
 	let sideNav;
-    
+	let navbarToggler;
 
-	onMount( () => {    
+	onMount(() => {
 		// Activate Bootstrap scrollspy on the main nav element
 		if (sideNav) {
 			console.log(sideNav);
@@ -16,7 +16,7 @@
 		}
 
 		// Collapse responsive navbar when toggler is visible
-		const navbarToggler = document.body.querySelector('.navbar-toggler');
+
 		const responsiveNavItems = [].slice.call(
 			document.querySelectorAll('#navbarResponsive .nav-link')
 		);
@@ -42,6 +42,7 @@
 		>
 	</a>
 	<button
+		bind:this={navbarToggler}
 		class="navbar-toggler"
 		type="button"
 		data-bs-toggle="collapse"
@@ -52,7 +53,7 @@
 	>
 		<span class="navbar-toggler-icon" />
 	</button>
-	<div class="collapse navbar-collapse" id="navbarResponsive">
+	<div class="collapse navbar-collapse show" id="navbarResponsive">
 		<ul class="navbar-nav">
 			<li class="nav-item">
 				<a class="nav-link js-scroll-trigger" href="#about">About</a>
@@ -61,7 +62,7 @@
 				<a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
+				<a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link js-scroll-trigger" href="#education">Education</a>
@@ -83,5 +84,65 @@
 	.nav-link {
 		font-family: Muli, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial,
 			sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+	}
+
+	#sideNav {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+	#sideNav .navbar-nav .nav-item .nav-link {
+		font-weight: 800;
+		letter-spacing: 0.05rem;
+		text-transform: uppercase;
+	}
+	#sideNav .navbar-toggler:focus {
+		outline-color: #d48a6e;
+	}
+
+	@media (min-width: 992px) {
+		#sideNav {
+			padding-left: 0;
+			padding-right: 0;
+			text-align: center;
+			position: fixed;
+			top: 0;
+			left: 0;
+			display: flex;
+			flex-direction: column;
+			width: 17rem;
+			height: 100vh;
+		}
+		#sideNav .navbar-brand {
+			display: flex;
+			margin: auto auto 0;
+			padding: 0.5rem;
+		}
+		#sideNav .navbar-brand .img-profile {
+			max-width: 10rem;
+			max-height: 10rem;
+			border: 0.5rem solid rgba(245, 223, 78, 0.5);
+		}
+		#sideNav .navbar-collapse {
+			display: flex;
+			align-items: flex-start;
+			flex-grow: 0;
+			width: 100%;
+			margin-bottom: auto;
+		}
+		#sideNav .navbar-collapse .navbar-nav {
+			flex-direction: column;
+			width: 100%;
+		}
+		#sideNav .navbar-collapse .navbar-nav .nav-item {
+			display: block;
+		}
+		#sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+			display: block;
+		}
+	}
+
+	.show {
+		display: none;
+		transition:cubic-bezier(0.55, 0.055, 0.675, 0.19);
 	}
 </style>
