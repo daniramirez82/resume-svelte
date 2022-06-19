@@ -2,14 +2,9 @@
 @import 'bootstrap/scss/root';
 @import 'bootstrap/scss/reboot';
 @import 'bootstrap/scss/type';
-@import 'bootstrap/scss/accordion';
-@import 'bootstrap/scss/alert';
-@import 'bootstrap/scss/badge';
-@import 'bootstrap/scss/breadcrumb';
 @import 'bootstrap/scss/buttons';
 @import 'bootstrap/scss/button-group';
 @import 'bootstrap/scss/card';
-@import 'bootstrap/scss/carousel';
 @import 'bootstrap/scss/close';
 @import 'bootstrap/scss/containers';
 @import 'bootstrap/scss/dropdown';
@@ -20,14 +15,9 @@
 @import 'bootstrap/scss/modal';
 @import 'bootstrap/scss/nav';
 @import 'bootstrap/scss/navbar';
-@import 'bootstrap/scss/offcanvas';
 @import 'bootstrap/scss/pagination';
-@import 'bootstrap/scss/popover';
 @import 'bootstrap/scss/progress';
-@import 'bootstrap/scss/spinners';
 @import 'bootstrap/scss/tables';
-@import 'bootstrap/scss/toasts';
-@import 'bootstrap/scss/tooltip';
 @import 'bootstrap/scss/helpers';
 @import 'bootstrap/scss/utilities';
 @import 'bootstrap/scss/utilities/api';
@@ -38,13 +28,21 @@ body {
 	padding-top: 3.375rem;
 	color: #6c757d;
 	font-family: 'Muli', sans-serif;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.main-cont{
+	max-width: 1250px;
+	position: relative;
 }
 
 
 @media (min-width: 992px) {
 	body {
 		padding-top: 0;
-		padding-left: 17rem;
+		// padding-left: 17rem;
 	}
 }
 h1,

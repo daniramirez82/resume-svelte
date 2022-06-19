@@ -8,7 +8,7 @@ export const dB = writable({
             title: 'Bread Manager',
             content: 'It is an svelte sapper aplication from my last job in a bakery, helps to make order and planing all the bread producction of the company',
             techs: ['svelte', 'firebase', 'pwa'],
-            subTitle: 'web application'
+            subTitle: 'web application',
         },
         {
             id: '02',
@@ -16,9 +16,17 @@ export const dB = writable({
             title: 'Inventory App',
             content: 'It s my UI/UX final project for my Google UX/UI certification, It about the research in how cafe and restaurants deal with the taks of make the inventory daily of theri ingredientes and products',
             techs: ['uxui', 'figma'],
-            subTitle: 'final project certification'
+            subTitle: 'final project certification',
 
         },
+        {
+            id:'03',
+            image: 'img/react-component.png',
+            title: 'React Prctice Component',
+            content:'A react component to practice basic concepts like props, iteration, components; its about a simple loging page using hooks like useState, useReducer and tools like ESlint and proptypes library',
+            techs: ['react', 'uxui', 'css'],
+            subTitle: 'practice react component for login',
+        }
 
     ],
     skills : [

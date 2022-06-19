@@ -3,17 +3,19 @@
 
 	import About from '../components/About.svelte';
 	import Nav from '../components/Nav.svelte';
-import Projects from '../components/Projects.svelte';
+	import Projects from '../components/Projects.svelte';
+	import Interest from '../components/Interest.svelte';
 </script>
 
 <Nav />
-<div class="container-fluid p-0">
+<div class="container-fluid">
 	<About />
 	<hr class="m-0" />
 	<Skills />
 	<hr class="m-0" />
-	<Projects/>
+	<Projects />
 	<hr class="m-0" />
+	<Interest />
 	<!-- Education-->
 	<section class="resume-section" id="education">
 		<div class="resume-section-content">
@@ -43,21 +45,7 @@ import Projects from '../components/Projects.svelte';
 	</section>
 	<hr class="m-0" />
 	<!-- Interests-->
-	<section class="resume-section" id="interests">
-		<div class="resume-section-content">
-			<h2 class="mb-5">Interests</h2>
-			<p>
-				Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I
-				am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy
-				mountain biking, free climbing, and kayaking.
-			</p>
-			<p class="mb-0">
-				When forced indoors, I follow a number of sci-fi and fantasy genre movies and television
-				shows, I am an aspiring chef, and I spend a large amount of my free time exploring the
-				latest technology advancements in the front-end web development world.
-			</p>
-		</div>
-	</section>
+
 	<hr class="m-0" />
 	<!-- Awards-->
 	<section class="resume-section" id="awards">
@@ -106,3 +94,10 @@ import Projects from '../components/Projects.svelte';
 		</div>
 	</section>
 </div>
+
+<style>
+.container-fluid{
+	padding-left: 17rem;
+	box-sizing: border-box;
+}	
+</style>

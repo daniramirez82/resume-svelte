@@ -65,11 +65,12 @@
 				<a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link js-scroll-trigger" href="#education">Education</a>
+				<a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+				<a class="nav-link js-scroll-trigger" href="#education">Education</a>
 			</li>
+			
 			<li class="nav-item">
 				<a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
 			</li>
@@ -106,7 +107,7 @@
 			text-align: center;
 			position: fixed;
 			top: 0;
-			left: 0;
+			/* left: 0; */
 			display: flex;
 			flex-direction: column;
 			width: 17rem;
@@ -138,6 +139,11 @@
 		}
 		#sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
 			display: block;
+		}
+		.fixed-top{
+			position: relative;
+			left: auto;
+			right: auto;
 		}
 	}
 

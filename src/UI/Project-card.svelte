@@ -1,5 +1,8 @@
 <script>
-	export let data;
+	export /**
+* @type {{ image: string | null | undefined; title: string | null | undefined; subTitle: any; content: any; techs: any; }}
+*/
+	 let data;
 </script>
 
 <div class="col">
@@ -61,6 +64,7 @@
         font-size: 3rem;
         font-weight: 600;
         margin-bottom: 30px;
+		text-align: center;
     }
 
 </style>
