@@ -48,19 +48,20 @@
         <ul class="fa-ul mb-0">
             <li>
                 <span class="fa-li"><i class="fas fa-check" /></span>
-                Mobile-First, Responsive Design
+                UX Research and UI Design
             </li>
             <li>
                 <span class="fa-li"><i class="fas fa-check" /></span>
-                Cross Browser Testing & Debugging
+                Mobile-First, Responsive Design
             </li>
+           
             <li>
                 <span class="fa-li"><i class="fas fa-check" /></span>
                 Cross Functional Teams
             </li>
             <li>
                 <span class="fa-li"><i class="fas fa-check" /></span>
-                Agile Development & Scrum
+                Sprint Desing systems /  Development & Scrum
             </li>
         </ul>
     </div>

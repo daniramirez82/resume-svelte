@@ -19,8 +19,14 @@
 </div>
 
 <style>
-.container-fluid{
-	padding-left: 17rem;
-	box-sizing: border-box;
-}	
+	.container-fluid {
+		padding-left: 17rem;
+		box-sizing: border-box;
+	}
+
+	@media (max-width: 992px) {
+		.container-fluid {
+			padding-left: 0;
+		}
+	}
 </style>

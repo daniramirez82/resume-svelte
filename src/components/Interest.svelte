@@ -16,8 +16,7 @@
 			<p>
 				Basically sports, in my free time i love to practice racquets sports such padel, frontenis
 				and i'm an enthusiastic biker.
-			</p>
-			<p class="mb-0">
+			<br/>
 				I like to construct a lot to stuff so i usually made some DIY home project with wood, and i
 				use to weld too.
 			</p>
@@ -85,5 +84,12 @@
         padding-top: 2rem;
     }
 
+    h5{
+        margin-bottom:  1rem !important
+    }
+
+    .resume-section-content p{
+        margin-bottom: 3rem;
+    }
 
 </style>

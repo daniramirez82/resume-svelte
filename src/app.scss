@@ -24,6 +24,10 @@
 @import url(https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700);
 @import url(https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i);
 
+@import './normalize.css';
+html{
+	box-sizing: border-box;
+}
 body {
 	padding-top: 3.375rem;
 	color: #6c757d;
@@ -31,6 +35,7 @@ body {
 	width: 100%;
 	display: flex;
 	justify-content: center;
+	box-sizing: border-box;
 }
 
 .main-cont{
@@ -42,7 +47,6 @@ body {
 @media (min-width: 992px) {
 	body {
 		padding-top: 0;
-		// padding-left: 17rem;
 	}
 }
 h1,
